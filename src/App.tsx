@@ -103,9 +103,9 @@ function App() {
     );}
 
   if (!socket) return (
-    <div className="flex justify-center">
-      <Spinner />
-    </div>
+    <div className="flex justify-center items-center h-screen">
+    <Spinner />
+  </div>
   );
 
   return (
