@@ -34,7 +34,7 @@ This project is a simple WebSocket-based chat application built with React. User
 3. Create a `.env` file in the root directory to specify environment variables. For example:
 
     ```plaintext
-    REACT_APP_WEBSOCKET_URL=wss://vibecheck-k5o9.onrender.com
+    REACT_APP_WEBSOCKET_URL=
     ```
 
 ### Running the Application
@@ -45,7 +45,7 @@ This project is a simple WebSocket-based chat application built with React. User
     npm start
     ```
 
-2. Open your browser and navigate to `http://localhost:3000`.
+2. Open your browser and navigate to `http://localhost:5173`.
 
 ## Usage
 
