@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     if (isUserNameSubmitted) {
-      const newSocket = new WebSocket("wss://vibecheck-k5o9.onrender.com");
+      const newSocket = new WebSocket(import.meta.env.VITE_BACKEND);
       newSocket.onopen = () => {
         console.log('Connection established');
         newSocket.send(userName);
