@@ -70,25 +70,37 @@ function App() {
 
   if (!isUserNameSubmitted) {
     return (
-      <div className="flex h-screen justify-center items-center bg-image">
-        <div className="p-4 bg-gray-200 rounded">
-          <h2 className="mb-4 text-center">Enter your name</h2>
-          <input
-            className="w-full border border-gray-300 rounded p-2 mb-4"
-            type="text"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-          />
-          <button
-            className="w-full bg-blue-500 text-white p-2 rounded"
-            onClick={handleUserNameSubmit}
-          >
-            Submit
-          </button>
+      <div className="grid grid-cols-1 md:grid-cols-2 h-screen bg-image">
+        {/* Left side */}
+        <div className="flex flex-col justify-center items-center">
+          <div className="p-4 bg-gray-200 rounded">
+            <h2 className="mb-4 text-center text-xl font-bold">Enter your name</h2>
+            <input
+              className="w-full border border-gray-300 rounded p-2 mb-4"
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+            />
+            <button
+              className="w-full text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+              onClick={handleUserNameSubmit}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        
+        {/* Right side */}
+        <div className="flex flex-col justify-center items-center">
+          <div className='flex flex-col items-center'>
+            <h1 className="text-3xl font-bold mb-4">Welcome to Talkify</h1>
+            <p className="text-center font-semibold">
+              Talkify is a platform for engaging conversations. Join our community and connect with others through meaningful discussions.
+            </p>
+          </div>
         </div>
       </div>
-    );
-  }
+    );}
 
   if (!socket) return (
     <div className="flex justify-center">
