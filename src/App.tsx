@@ -116,7 +116,7 @@ function App() {
           className="bg-red-500 text-white p-2 rounded"
           onClick={handleSignOut}
         >
-          Sign Out
+          Disconnect
         </button>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
