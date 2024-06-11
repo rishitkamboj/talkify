@@ -1,6 +1,6 @@
-# WebSocket Chat UI
+# Talkify
 
-This project is a simple WebSocket-based chat application built with React. Users can enter their names, connect to a WebSocket server, send and receive messages, and see the count of connected users.
+This project is a simple  chat application built with React. Users can enter their names, connect to a WebSocket server, send and receive messages, and see the count of connected users.
 
 ## Features
 
